@@ -2,61 +2,37 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>My Title</title>
+<title>Array</title>
+<link rel="stylesheet" type="text/css" href="style/global.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-<script>
-  var emp = new Array("Ravi", "Karim", "Banty", "Amar", "Mohan");
-    document.write("List of the employees are : <br>");
-    for (i=0; i<emp.length; i++)
-    {
-    	 document.write(emp[i] + "<br>");
-    }
-  
-    // display number less than 50
-
-    var j;
-    document.write(" <br> number less than 50 are : <br>");
-   for(j=0; j<50; j++)
-		{
-		 document.write(j + ",");
-		}
-    // display Fibonacci less than 50
-
-    var pre=0;  var curr=1; var next;
-    document.write(" <br><br><br> Fibonacci number less than 50 are : <br>");
-   //0,1,1,    2,3,5,8,13,21,34,55, 
-   //while(pre<20)
-   for(next=0; next<100; next++)
-		{
-		 document.write(pre + ",");
-		
-		  next = pre + curr;
-          pre = curr;
-          curr = next;
-          
-		}
-    		
-
-// fibonacci number
-
-var firstNumber =0; var secondNumber =1; var result;
-document.write("<br><br><br>display the fibonacci serices: <br>");
-for(result = 0; result<100; result++)
-{
- document.write(firstNumber + ",");
-    result = firstNumber + secondNumber;
-    firstNumber = secondNumber;
-    secondNumber = result;
-	
-
-}
-
-
-</script>
+<script src="js/main.js"></script>
 </head>
 
 <body>
 
+<div id="fibonacciNum">
+<h1>Fibonacci Numbers</h1>
+<div id="fibnum"> </div>
+</div>
+<br><br>
+
+
+
+<div id="arrayList">
+<h1>Array List</h1>
+<div id="aryList"> </div>
+</div>
+<br><br>
+
+<div id="mydiv"> </div>
+
+
+
+<script>
+  
+  abc();
+</script>
 
 </body>
 
